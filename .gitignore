@@ -4,6 +4,7 @@
 npm-debug.log
 dump.rdb
 node_modules
+examples/jspm_packages
 results.tap
 results.xml
 npm-shrinkwrap.json
