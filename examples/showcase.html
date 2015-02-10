@@ -14,10 +14,18 @@
 <script type="text/javascript" src="build.js"></script>
 <script type="text/javascript">
 	System.import('index').then(function(Joi) {
+		var schema = Joi.object().keys({
+			username: Joi.string().alphanum().min(3).max(30).required(),
+			password: Joi.string().regex(/[a-zA-Z0-9]{3,30}/),
+			access_token: [Joi.string(), Joi.number()],
+			birthyear: Joi.number().integer().min(1900).max(2013),
+			email: Joi.string().email()
+		}).with('username', 'birthyear').without('password', 'access_token');
 
-		console.log("angular bootstrap");
+		var vr = Joi.validate({ username: 'abc', birthyear: 1994, email: 'capajj@gmail.com' }, schema);
+		console.log("validation result", vr);
 	}, function(e) {
-		setTimeout(function () {
+		setTimeout(function() {
 			console.error(e);
 		});
 	});

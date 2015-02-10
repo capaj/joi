@@ -8,7 +8,9 @@ System.config({
 
 System.config({
   "map": {
-    "hoek-browser": "github:capaj/hoek-browser@2.12.0"
+    "hoek": "github:capaj/hoek-browser@2.12.0",
+    "topo": "github:capaj/topo-browser@1.0.3",
+    "moment": "github:moment/moment@2.9.0"
   }
 });
 
