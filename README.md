@@ -2,13 +2,17 @@
 
 Object schema description language and validator for JavaScript objects.
 
-[![npm version](https://badge.fury.io/js/joi.svg)](http://badge.fury.io/js/joi)
-[![Build Status](https://secure.travis-ci.org/hapijs/joi.svg)](http://travis-ci.org/hapijs/joi)
-[![Dependencies Status](https://david-dm.org/hapijs/joi.svg)](https://david-dm.org/hapijs/joi)
-[![DevDependencies Status](https://david-dm.org/hapijs/joi/dev-status.svg)](https://david-dm.org/hapijs/joi#info=devDependencies)
+[![Build Status](https://secure.travis-ci.org/capaj/joi-browser.svg)](http://travis-ci.org/capaj/joi-browser)
+[![Dependencies Status](https://david-dm.org/capaj/joi-browser.svg)](https://david-dm.org/capaj/joi-browser)
+[![DevDependencies Status](https://david-dm.org/capaj/joi-browser/dev-status.svg)](https://david-dm.org/capaj/joi-browser#info=devDependencies)
 
-Lead Maintainer: [Nicolas Morel](https://github.com/marsup)
-
+Lead Maintainer or the original Joi: [Nicolas Morel](https://github.com/marsup)
+This for is intended to shadow original as much as possible while  working in the browser as well as in node.js.
+## Installation
+```
+jspm install joi    //for browser
+npm install joi     //for node
+```
 ## Table of Contents
 
 <img src="https://raw.github.com/hapijs/joi/master/images/validation.png" align="right" />
